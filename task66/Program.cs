@@ -3,3 +3,14 @@
 // M = 1; N = 15 -> 120
 // M = 4; N = 8. -> 30
 
+Console.WriteLine(PrintSumMToN(4, 8));
+
+int PrintSumMToN(int start, int end)
+{
+    if (start == end) 
+    {
+        return start;
+    }
+    return start + PrintSumMToN(start +1, end);
+}
+
